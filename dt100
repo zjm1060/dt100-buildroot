@@ -1,0 +1,8 @@
+#!/bin/bash
+
+BUILDROOT_PATH=${PWD}/buildroot
+OUTPUT_PATH=${PWD}/output
+CONTRIB_PATH=${PWD}/contrib
+
+make BR2_EXTERNAL=${CONTRIB_PATH} -C ${BUILDROOT_PATH} O=${OUTPUT_PATH} $1
+
